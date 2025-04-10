@@ -789,11 +789,11 @@ header h1 {
     flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
   }
 
-  /* Position the menu icon on the left */
+  /* Force the menu icon to move to the left */
   .dropdown {
-    position: absolute;
+    position: fixed; /* Fixed positioning ensures it stays on the left */
     top: 10px;
-    left: 10px; /* Ensure the dropdown menu aligns to the left */
+    left: 10px; /* Align the dropdown to the far-left */
     z-index: 1000; /* Prevent overlapping issues */
   }
 
@@ -817,7 +817,7 @@ header h1 {
 
   /* Further adjustments for the menu icon on smaller screens */
   .dropdown {
-    position: absolute;
+    position: fixed; /* Fixed positioning ensures it stays on the left */
     top: 10px;
     left: 10px; /* Keep the dropdown menu aligned to the left */
     z-index: 1000; /* Prevent overlapping issues */

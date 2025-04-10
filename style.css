@@ -777,6 +777,7 @@ header h1 {
   header h1 {
     font-size: 1.5rem;
     padding: 0.5rem;
+    text-align: center; /* Ensure heading remains centered */
   }
 
   nav ul {
@@ -788,7 +789,14 @@ header h1 {
     flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
   }
 
-  /* Fix for menu icon size */
+  /* Position the menu icon on the left */
+  .dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Ensure the dropdown menu aligns to the left */
+    z-index: 1000; /* Prevent overlapping issues */
+  }
+
   .dropdown-button {
     font-size: 0.875rem; /* Reduce font size for the button */
     padding: 8px 12px; /* Adjust padding for a smaller size */
@@ -800,13 +808,21 @@ header h1 {
   header h1 {
     font-size: 1.3rem;
     padding: 0.25rem;
+    text-align: center; /* Ensure heading remains centered */
   }
 
   .image-card {
     flex: 1 1 100%; /* Full width on extra small screens */
   }
 
-  /* Further adjustments for menu icon on smaller screens */
+  /* Further adjustments for the menu icon on smaller screens */
+  .dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Keep the dropdown menu aligned to the left */
+    z-index: 1000; /* Prevent overlapping issues */
+  }
+
   .dropdown-button {
     font-size: 0.75rem; /* Even smaller font size for extra small screens */
     padding: 6px 10px; /* Reduce padding further */

@@ -1,0 +1,801 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e3a3a;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ffffff22;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #155e75;
+}
+
+.intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  background-color: #f1f5f9;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #155e75;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.image-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 300px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 1.5rem);
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-card p {
+  padding: 1rem;
+  font-weight: bold;
+  color: #1e3a3a;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #1e3a3a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.about-section h2 {
+  font-size: 1.6rem;
+  color: #155e75;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-section p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  background-color: #f0f4f8;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #1e3a3a;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.services-section h2 {
+  color: #155e75;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.services-list,
+.benefits-list,
+.holiday-list {
+  margin: 1rem 0 2rem 0;
+  padding-left: 1.5rem;
+}
+
+.services-list li,
+.benefits-list li,
+.holiday-list li {
+  background-color: #f1f5f9;
+  border-left: 4px solid #155e75;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  color: #333;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.wine-intro p {
+  font-size: 1.1rem;
+  color: #374151;
+  background: #f1f5f9; /* Updated to match about page */
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.itinerary, .inclusions {
+  margin-bottom: 2rem;
+}
+
+.itinerary h3, .inclusions h3 {
+  font-size: 1.4rem;
+  color: #155e75;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.itinerary h4 {
+  font-size: 1.1rem;
+  color: #155e75;
+  margin-top: 1rem;
+}
+
+.itinerary ul, .inclusions ul {
+  padding-left: 1.5rem;
+}
+
+.itinerary li, .inclusions li {
+  background-color: #f3f4f6;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h5 {
+  margin: 0;
+  color: #155e75;
+  font-size: 1.25rem;
+}
+
+.card-content p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+/* Default image-card styles (used on home and other pages) */
+.image-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 300px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 1.5rem);
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Bigger images only on Wine Tour page */
+.wine-gallery .image-card {
+  max-width: 80%;
+  flex: 1 1 80%;
+  margin-bottom: 20px;
+}
+
+.wine-gallery .image-card img {
+  height: auto;
+  max-width: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the highlighted paragraph */
+.highlight-paragraph {
+  font-size: 1.2rem;
+  color: #155e75;
+  background-color: #f1f5f9; /* Updated to match about page */
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Match color of wine tour heading with itinerary headings */
+.wine-intro h2 {
+  color: #155e75;
+}
+
+/* Bigger images only on Big 5 Tour page */
+.big5-gallery .image-card {
+  max-width: 80%;
+  flex: 1 1 80%;
+  margin-bottom: 20px;
+}
+
+.big5-gallery .image-card img {
+  height: auto;
+  max-width: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Match color of Big 5 tour heading with itinerary headings */
+.big5-intro h2 {
+  color: #155e75;
+}
+
+/* Big 5 Tour paragraph styles */
+.big5-intro p {
+  font-size: 1.1rem;
+  color: #374151;
+  background: #f1f5f9; /* Updated to match about page */
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+/* Styles for the Popular Itineraries page */
+.popular-itineraries .itineraries-intro h2 {
+  color: #155e75; /* Match heading color */
+}
+
+.popular-itineraries .itineraries-intro p {
+  font-size: 1.1rem;
+  color: #374151;
+  background-color: #f1f5f9; /* Match paragraph background */
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popular-itineraries .itinerary h3 {
+  font-size: 1.4rem;
+  color: #155e75; /* Match heading color */
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.popular-itineraries .itinerary h4 {
+  font-size: 1.1rem;
+  color: #155e75;
+  margin-top: 1rem;
+}
+
+.popular-itineraries .itinerary ul {
+  padding-left: 1.5rem;
+}
+
+.popular-itineraries .itinerary li {
+  background-color: #f3f4f6;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.popular-itineraries .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.popular-itineraries .image-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 80%; /* Ensure full-width images */
+  text-align: center;
+  flex: 1 1 80%; /* Adjust image card size */
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.popular-itineraries .image-card img {
+  height: auto;
+  max-width: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular-itineraries .card-content {
+  padding: 1rem;
+}
+
+.popular-itineraries .card-content h5 {
+  margin: 0;
+  color: #155e75;
+  font-size: 1.25rem;
+}
+
+.popular-itineraries .card-content p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.popular-itineraries .inclusions ul {
+  padding-left: 1.5rem;
+}
+
+.popular-itineraries .inclusions li {
+  background-color: #f3f4f6;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.popular-itineraries .highlight-paragraph {
+  font-size: 1.2rem;
+  color: #155e75;
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+/* Styles for the City Breaks page */
+.city-breaks .city-breaks-intro h2 {
+  color: #155e75; /* Match heading color */
+}
+
+.city-breaks .city-breaks-intro p {
+  font-size: 1.1rem;
+  color: #374151;
+  background-color: #f1f5f9; /* Match paragraph background */
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city-breaks .itinerary h3 {
+  font-size: 1.4rem;
+  color: #155e75; /* Match heading color */
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.city-breaks .itinerary h4 {
+  font-size: 1.1rem;
+  color: #155e75;
+  margin-top: 1rem;
+}
+
+.city-breaks .itinerary ul {
+  padding-left: 1.5rem;
+}
+
+.city-breaks .itinerary li {
+  background-color: #f3f4f6;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.city-breaks .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.city-breaks .image-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 80%; /* Ensure full-width images */
+  text-align: center;
+  flex: 1 1 80%; /* Adjust image card size */
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.city-breaks .image-card img {
+  height: auto;
+  max-width: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.city-breaks .card-content {
+  padding: 1rem;
+}
+
+.city-breaks .card-content h5 {
+  margin: 0;
+  color: #155e75;
+  font-size: 1.25rem;
+}
+
+.city-breaks .card-content p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.city-breaks .inclusions ul {
+  padding-left: 1.5rem;
+}
+
+.city-breaks .inclusions li {
+  background-color: #f3f4f6;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.city-breaks .highlight-paragraph {
+  font-size: 1.2rem;
+  color: #155e75;
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+/* Styles for the Contact Page */
+.contact-page .contact-intro h2 {
+  color: #155e75; /* Match heading color */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-page .contact-intro p {
+  font-size: 1.1rem;
+  color: #374151;
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-left: 4px solid #155e75;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-page .contact-details {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-page .contact-details p {
+  margin-bottom: 1rem;
+}
+
+.contact-page .contact-details a {
+  color: #155e75;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-page .contact-details a:hover {
+  color: #1e3a3a;
+}
+.contact-page .contact-details {
+   font-size: 1.2rem;
+   color: #155e75;
+   background-color: #f1f5f9;
+   padding: 1rem;
+   border-left: 4px solid #155e75;
+   border-radius: 5px;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   margin-top: 1.5rem;
+   line-height: 1.8;
+}
+
+.contact-details {
+  margin-top: 2rem; /* Add spacing from the intro section */
+}
+.contact-details p strong {
+  color: #155e75; /* Match the Contact Me heading color */
+}
+/* Dropdown Container */
+.dropdown {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 9999;
+  width: 220px;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  background-color: #1e3a3a;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-button.active {
+  background-color: #145555;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-button:hover {
+  background-color: #145555;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+/* Dropdown Menu List Items */
+.dropdown-menu li {
+  width: 100%;
+  margin: 0;
+}
+
+/* Dropdown Menu Links */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #1e3a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+  width: calc(100% - 10px); /* Prevent hover overflow */
+  margin: 0 auto; /* Center it inside li */
+}
+
+/* Hover and Active Styles */
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+  color: #145555;
+}
+
+.dropdown-menu li a.active {
+  background-color: #d0ece7;
+  color: #0b5345;
+}
+
+/* Optional: Spacing Between Items */
+.dropdown-menu li:not(:last-child) {
+  margin-bottom: 5px;
+}
+/* About Page H1 Heading Styles */
+.about-section h1 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: inline-block; /* Make the underline span only the width of the text */
+  
+  
+}
+.services-section h1 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: inline-block; /* Make the underline span only the width of the text */
+  
+  
+}
+.wine-intro h2 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: inline-block; /* Make the underline span only the width of the text */
+  
+}
+.big5-intro h2 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: inline-block; /* Make the underline span only the width of the text */
+  
+}
+.itineraries-intro h2 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: inline-block; /* Make the underline span only the width of the text */
+  
+}
+.city-breaks-intro h2 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: inline-block; /* Make the underline span only the width of the text */
+  
+}
+.contact-intro h2 {
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  color: #155e75; /* Primary color */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-weight: bold; /* Make it bold for prominence */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  display: default; /* Keep inline behavior if needed */
+}
+header h1 {
+  font-size: 3rem; /* Keep the font size large for emphasis */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center align the heading */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 2px; /* Add letter spacing for readability */
+  text-transform: uppercase; /* Transform text to uppercase */
+  margin-top: 0.5rem; /* Add margin from the top */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .image-card {
+    flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+    padding: 0.25rem;
+  }
+
+  .image-card {
+    flex: 1 1 100%; /* Full width on extra small screens */
+  }
+}

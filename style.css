@@ -787,6 +787,13 @@ header h1 {
   .image-card {
     flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
   }
+
+  /* Fix for menu icon size */
+  .dropdown-button {
+    font-size: 0.875rem; /* Reduce font size for the button */
+    padding: 8px 12px; /* Adjust padding for a smaller size */
+    width: auto; /* Ensure the width of the button adjusts dynamically */
+  }
 }
 
 @media (max-width: 480px) {
@@ -797,5 +804,12 @@ header h1 {
 
   .image-card {
     flex: 1 1 100%; /* Full width on extra small screens */
+  }
+
+  /* Further adjustments for menu icon on smaller screens */
+  .dropdown-button {
+    font-size: 0.75rem; /* Even smaller font size for extra small screens */
+    padding: 6px 10px; /* Reduce padding further */
+    width: auto; /* Keep the button width dynamic */
   }
 }

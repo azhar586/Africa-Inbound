@@ -789,18 +789,18 @@ header h1 {
     flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
   }
 
-  /* Force the menu icon to move to the left */
+  /* Move the menu icon to the left */
   .dropdown {
-    position: fixed; /* Fixed positioning ensures it stays on the left */
+    position: fixed; /* Fixed positioning ensures it stays at the top-left */
     top: 10px;
-    left: 10px; /* Align the dropdown to the far-left */
-    z-index: 1000; /* Prevent overlapping issues */
+    left: 10px; /* Align the dropdown menu to the left */
+    z-index: 1000; /* Ensure it stays above other elements */
   }
 
   .dropdown-button {
     font-size: 0.875rem; /* Reduce font size for the button */
     padding: 8px 12px; /* Adjust padding for a smaller size */
-    width: auto; /* Ensure the width of the button adjusts dynamically */
+    width: auto; /* Ensure the width adjusts dynamically */
   }
 }
 
@@ -817,15 +817,15 @@ header h1 {
 
   /* Further adjustments for the menu icon on smaller screens */
   .dropdown {
-    position: fixed; /* Fixed positioning ensures it stays on the left */
+    position: fixed; /* Fixed positioning ensures it stays at the top-left */
     top: 10px;
     left: 10px; /* Keep the dropdown menu aligned to the left */
     z-index: 1000; /* Prevent overlapping issues */
   }
 
   .dropdown-button {
-    font-size: 0.75rem; /* Even smaller font size for extra small screens */
-    padding: 6px 10px; /* Reduce padding further */
-    width: auto; /* Keep the button width dynamic */
+    font-size: 0.75rem; /* Reduce font size for smaller screens */
+    padding: 6px 10px; /* Adjust padding further */
+    width: auto; /* Dynamic width for the button */
   }
 }

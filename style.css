@@ -780,29 +780,24 @@ header h1 {
 @media (max-width: 768px) {
   header {
     position: relative; /* Provide context for absolutely positioned elements */
-    padding:  0.25rem 1rem; /* Add padding to prevent overlap */
+    padding: 0.5rem 1rem; /* Add padding to prevent overlap */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center the heading */
   }
 
   header h1 {
     font-size: 1.5rem;
-    text-align: center; /* Keep the heading centered */
     margin: 0; /* Remove unnecessary margin */
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .image-card {
-    flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
+    flex: 1; /* Allow the heading to take available space */
+    text-align: center; /* Keep the heading centered */
   }
 
   /* Properly position the menu icon */
   .dropdown {
     position: absolute; /* Position it relative to the header container */
     top: 50%; /* Vertically center the dropdown button */
-    left: 10px; /* Align to the left */
+    left: 15px; /* Align to the left */
     transform: translateY(-50%); /* Adjust for perfect centering */
     z-index: 1000; /* Ensure it appears above other elements */
   }
@@ -810,9 +805,9 @@ header h1 {
   .dropdown-button {
     font-size: 0.875rem; /* Reduce font size for the button */
     padding: 8px 12px; /* Adjust padding for a smaller size */
-    
     background-color: #1e3a3a; /* Keep consistent styling */
     border: none; /* Remove any border */
+    width: auto; /* Ensure the width adjusts dynamically */
   }
 }
 
@@ -820,32 +815,32 @@ header h1 {
   header {
     position: relative; /* Provide context for absolutely positioned elements */
     padding: 0.25rem 1rem; /* Add padding to prevent overlap */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center the heading */
   }
 
   header h1 {
     font-size: 1.3rem;
-    text-align: center; /* Keep the heading centered */
     margin: 0; /* Remove unnecessary margin */
-  }
-
-  .image-card {
-    flex: 1 1 100%; /* Full width on extra small screens */
+    flex: 1; /* Allow the heading to take available space */
+    text-align: center; /* Keep the heading centered */
   }
 
   /* Further adjustments for the menu icon on smaller screens */
   .dropdown {
     position: absolute; /* Position it relative to the header container */
     top: 50%; /* Vertically center the dropdown button */
-    left: 10px; /* Keep it neatly aligned to the left */
+    left: 15px; /* Slightly increase the left alignment for better spacing */
     transform: translateY(-50%); /* Adjust for perfect centering */
     z-index: 1000; /* Ensure it appears above other elements */
   }
 
   .dropdown-button {
-    font-size: 0.75rem; /* Reduce font size further for smaller screens */
+    font-size: 0.75rem; /* Reduce font size for smaller screens */
     padding: 6px 10px; /* Adjust padding further */
-    
     background-color: #1e3a3a; /* Keep consistent styling */
     border: none; /* Remove any border */
+    width: auto; /* Ensure the width adjusts dynamically */
   }
 }

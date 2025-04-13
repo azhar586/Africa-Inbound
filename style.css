@@ -775,12 +775,12 @@ header h1 {
 /* Responsive Styles */
 @media (max-width: 768px) {
   header {
-    position: relative; /* Ensure proper positioning context for child elements */
+    position: relative; /* Provide context for absolutely positioned elements */
+    padding: 0.5rem 1rem; /* Add padding to prevent overlap */
   }
 
   header h1 {
     font-size: 1.5rem;
-    padding: 0.5rem;
     text-align: center; /* Keep the heading centered */
     margin: 0; /* Remove unnecessary margin */
   }
@@ -794,12 +794,12 @@ header h1 {
     flex: 1 1 calc(50% - 1rem); /* Adjust image cards for smaller devices */
   }
 
-  /* Move the menu icon to the left */
+  /* Properly position the menu icon */
   .dropdown {
-    position: absolute; /* Position it relative to the header */
-    top: 50%; /* Vertically center it relative to the header */
-    left: 10px; /* Align it neatly to the left */
-    transform: translateY(-50%); /* Correct vertical alignment */
+    position: absolute; /* Position it relative to the header container */
+    top: 50%; /* Vertically center the dropdown button */
+    left: 10px; /* Align to the left */
+    transform: translateY(-50%); /* Adjust for perfect centering */
     z-index: 1000; /* Ensure it appears above other elements */
   }
 
@@ -814,12 +814,12 @@ header h1 {
 
 @media (max-width: 480px) {
   header {
-    position: relative; /* Ensure proper positioning context for child elements */
+    position: relative; /* Provide context for absolutely positioned elements */
+    padding: 0.25rem 1rem; /* Add padding to prevent overlap */
   }
 
   header h1 {
     font-size: 1.3rem;
-    padding: 0.25rem;
     text-align: center; /* Keep the heading centered */
     margin: 0; /* Remove unnecessary margin */
   }
@@ -830,10 +830,10 @@ header h1 {
 
   /* Further adjustments for the menu icon on smaller screens */
   .dropdown {
-    position: absolute; /* Position it relative to the header */
-    top: 50%; /* Vertically center it relative to the header */
+    position: absolute; /* Position it relative to the header container */
+    top: 50%; /* Vertically center the dropdown button */
     left: 10px; /* Keep it neatly aligned to the left */
-    transform: translateY(-50%); /* Correct vertical alignment */
+    transform: translateY(-50%); /* Adjust for perfect centering */
     z-index: 1000; /* Ensure it appears above other elements */
   }
 

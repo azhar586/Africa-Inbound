@@ -17,6 +17,10 @@ header {
   color: #fff;
   padding: 1rem;
   text-align: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 header h1 {
@@ -776,7 +780,7 @@ header h1 {
 @media (max-width: 768px) {
   header {
     position: relative; /* Provide context for absolutely positioned elements */
-    padding: 0.5rem 1rem; /* Add padding to prevent overlap */
+    padding: 0.5rem; /* Add padding to prevent overlap */
   }
 
   header h1 {

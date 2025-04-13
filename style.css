@@ -797,7 +797,7 @@ header h1 {
   .dropdown {
     position: absolute; /* Position it relative to the header container */
     top: 50%; /* Vertically center the dropdown button */
-    left: 50px; /* Align to the left */
+    left: 5px; /* Align to the left */
     transform: translateY(-50%); /* Adjust for perfect centering */
     z-index: 1000; /* Ensure it appears above other elements */
   }

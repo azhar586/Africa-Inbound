@@ -841,19 +841,19 @@ header h1 {
     padding: 0.25rem 1rem; /* Add padding to prevent overlap */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Vertically align items */
-    justify-content: center; /* Center the heading */
+    justify-content: space-between; /* Space out the menu and heading */
   }
 
   header h1 {
     font-size: 1.3rem;
-    margin: 0; /* Remove unnecessary margin */
+    margin: 0 auto; /* Center the heading */
+    text-align: center; /* Ensure text alignment */
     flex: 1; /* Allow the heading to take available space */
-    text-align: center; /* Keep the heading centered */
   }
 
   /* Further adjustments for the menu icon on smaller screens */
   .dropdown {
-    position: absolute; /* Position it relative to the header container */
+    position: relative; /* Position it relative to the header container */
     top: 50%; /* Vertically center the dropdown button */
     left: 15px; /* Slightly increase the left alignment for better spacing */
     transform: translateY(-50%); /* Adjust for perfect centering */

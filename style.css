@@ -797,7 +797,7 @@ header h1 {
   .dropdown {
     position: absolute; /* Position it relative to the header container */
     top: 50%; /* Vertically center the dropdown button */
-    left: 5px; /* Align to the left */
+    left: 15px; /* Align to the left */
     transform: translateY(-50%); /* Adjust for perfect centering */
     z-index: 1000; /* Ensure it appears above other elements */
   }
@@ -808,6 +808,30 @@ header h1 {
     background-color: #1e3a3a; /* Keep consistent styling */
     border: none; /* Remove any border */
     width: auto; /* Ensure the width adjusts dynamically */
+  }
+
+  .image-gallery {
+    flex-direction: column; /* Stack the image cards vertically */
+    gap: 1rem; /* Reduce the gap between image cards */
+    margin-top: 1.5rem; /* Adjust top margin */
+  }
+
+  .image-card {
+    flex: 1 1 100%; /* Make image cards take full width */
+    max-width: 100%; /* Ensure cards don't exceed container width */
+    margin: 0 auto; /* Center the cards horizontally */
+    text-align: center;
+  }
+
+  .image-card img {
+    width: 100%; /* Ensure the image takes the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure proper image scaling */
+  }
+
+  .image-card p {
+    padding: 0.5rem; /* Reduce padding for text */
+    font-size: 1rem; /* Adjust font size for readability */
   }
 }
 
@@ -842,5 +866,29 @@ header h1 {
     background-color: #1e3a3a; /* Keep consistent styling */
     border: none; /* Remove any border */
     width: auto; /* Ensure the width adjusts dynamically */
+  }
+
+  .image-gallery {
+    flex-direction: column; /* Stack the image cards vertically */
+    gap: 0.8rem; /* Further reduce the gap between image cards */
+    margin-top: 1rem; /* Adjust top margin */
+  }
+
+  .image-card {
+    flex: 1 1 100%; /* Ensure image cards take full width */
+    max-width: 100%; /* Prevent cards from exceeding container width */
+    margin: 0 auto; /* Center the cards horizontally */
+    text-align: center;
+  }
+
+  .image-card img {
+    width: 100%; /* Ensure the image takes the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure proper image scaling */
+  }
+
+  .image-card p {
+    padding: 0.5rem; /* Reduce padding for text */
+    font-size: 0.9rem; /* Further adjust font size for smaller screens */
   }
 }
